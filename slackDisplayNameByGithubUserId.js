@@ -1,0 +1,15 @@
+module.exports = {
+  '559351': 'amowu',
+  '5241516': 'austin',
+  '3805975': 'weiming',
+  '12410942': 'lawrence',
+  '2316687': 'henry',
+  '875284': 'jason.wu',
+  '7612025': 'jimmy',
+  '19630268': 'alexchen',
+  '2028693': 'peter',
+  '33274347': 'raccoon',
+  '18576075': 'rubychi',
+  '2786720': 'terrence',
+  '14314532': 'weihanglo',
+}

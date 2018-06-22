@@ -1,0 +1,36 @@
+{
+  "name": "probot-master-master",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Amo Wu <amo260@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/amowu/probot-master-master.git",
+  "scripts": {
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "@octokit/rest": "^15.8.2",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "probot": "^6.0.0",
+    "probot-config": "^0.1.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.1",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
