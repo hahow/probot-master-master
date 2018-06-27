@@ -50,7 +50,7 @@ module.exports = app => {
 
         const repo = get(context, 'payload.repository.name')
         const owner = get(context, 'payload.repository.owner.login')
-        const head = get(context, 'payload.pull_request.head.ref')
+        const head = get(context, 'payload.pull_request.head.label')
         const number = get(context, 'payload.pull_request.number')
         const assignees = get(context, 'payload.pull_request.assignees')
           .map(assignee => get(assignee, 'login'))
@@ -87,7 +87,7 @@ module.exports = app => {
             response_type: 'in_channel',
             attachments: [
               {
-                text: '需要本蛙爺再建立一個 merge 其它 branch 的 PR 嗎？',
+                text: '需要本蛙爺再幫你建立一個 merge 其它 branch 的 PR 嗎？',
                 fallback: '',
                 callback_id: 'pr_branch',
                 color: '#949EA6',
