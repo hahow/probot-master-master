@@ -16,7 +16,7 @@ function formatGithubUserIdToSlackLinkingText (githubUserId) {
 
 github.authenticate({
   type: 'token',
-  token: process.env.GITHUB_PERSONAL_ACCESS_TOKENS,
+  token: process.env.GITHUB_TOKEN,
 })
 
 module.exports = app => {
